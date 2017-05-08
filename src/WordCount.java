@@ -69,6 +69,9 @@ public class WordCount
 
         FileInputFormat.addInputPath(conf, new Path(args[0]));
         FileOutputFormat.setOutputPath(conf, new Path(args[1]));
+        
+        long startTime = System.currentTimeMillis();
         JobClient.runJob(conf);        //运行一个job
+        System.out.println("job completed in " + (System.currentTimeMillis() - startTime) + " ms");
     }
 }
