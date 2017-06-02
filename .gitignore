@@ -1,6 +1,7 @@
-/bin/
-/input/
-/build/
-/.classpath
-/.project
-/.DS_Store
+/bin/*
+/input/*
+/output/*
+/build/*
+*.classpath
+*.project
+*.DS_Store
